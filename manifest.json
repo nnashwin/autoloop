@@ -1,0 +1,22 @@
+{
+  "name": "Autoloop",
+  "description": "Play a youtube video on repeat",
+  "icons": {"128": "infinity128.png"},
+  "version": "0.1",
+  "permissions": [
+      "http://*.youtube.com/*", "https://*.youtube.com/*", "activeTab", "tabs"
+  ],
+  "browser_action": {
+      "default_title": "Autoloop",
+      "default_icon": { 
+		  "128": "infinity128.png" ,
+		  "16": "infinity16.png",
+		  "48": "infinity48.png"
+	  }
+  },
+  "background": {
+	"persistent": false,
+	"scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
